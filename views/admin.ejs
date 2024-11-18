@@ -9,7 +9,6 @@
             <th>Último inicio de sesión</th>
             <th>Conectado</th>
             <th>Nuevo Username</th>
-            <th>Nueva Password</th>
             <th>Acciones</th>
         </tr>
     </thead>
@@ -22,9 +21,6 @@
             <td data-label="Nuevo Username">
                 <form action="/admin/<%= user.uuid %>/update" method="POST" style="display: inline;">
                     <input type="text" name="username" value="<%= user.username %>" placeholder="Nuevo Usuario" required>
-                </td>
-                <td data-label="Nuevo Password">
-                    <input type="password" name="password" value="<%= user.username %>" placeholder="Nueva Contraseña">
                 </td>
                 <td>
                     <button type="submit">Actualizar</button>
