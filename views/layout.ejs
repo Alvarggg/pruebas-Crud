@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arminton</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Arminton
+        </div>
+        <% if (typeof page === 'undefined' || (page !== 'login' && page !== 'register')) { %> <!-- Verificar si page está definido -->
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- Símbolo del menú hamburguesa -->
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/characters">Perfiles</a></li>
+                <li><a href="/players">Lista de jugadores</a></li>
+                <li><a href="/game">Jugar</a></li>
+
+                <% if (session && session.isAdmin) { %>
+                    <li><a href="/admin">Admininstación</a></li>
+                <% } %>
+
+                <% if (!session.userId) { %>
+                    <li><a href="/login">Iniciar sesión</a></li>
+                <% } else { %>
+                    <li><a href="/logout">Cerrar sesión</a></li>
+                <% } %>
+            </ul>
+        </nav>
+        <% } %>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+    
+    <%- body %>
+</body>
+</html>

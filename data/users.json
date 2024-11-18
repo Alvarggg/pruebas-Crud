@@ -1,0 +1,23 @@
+[
+  {
+    "username": "a",
+    "password": "$2b$10$WSZ6HJs9o5U0nWsv4xLj/OEWXwXOnIc/yH0VywIbZ7pzBsxQSg0oW",
+    "uuid": "47e65728-87d4-44cd-bd5c-fa6a189fe4eb",
+    "lastLogin": "2024-11-18T17:14:20.992Z",
+    "isConnected": true
+  },
+  {
+    "username": "b",
+    "password": "$2b$10$RkOHpz841TQcTgSz3T0iq.PECXadaCPXccBrvpeNl1wvLliq1FY6C",
+    "uuid": "daece884-cca6-4213-b0cf-488212d2ed94",
+    "lastLogin": "2024-11-16T15:48:20.142Z",
+    "isConnected": true
+  },
+  {
+    "username": "admin",
+    "password": "$2b$10$ySAB3aHUTQM2yKnbTZVEhuOu.5nzpFlZSyjQ3aIEuXNIFMEm0csP6",
+    "uuid": "9e27103a-292e-47bd-b778-cf981c951519",
+    "lastLogin": "2024-11-15T11:56:58.843Z",
+    "isConnected": false
+  }
+]

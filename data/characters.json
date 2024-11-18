@@ -1,0 +1,50 @@
+[
+  {
+    "id": 2,
+    "name": "popopo",
+    "energyLevel": 5,
+    "lifePoints": 1,
+    "tipoArma": "Pistola",
+    "userId": "47e65728-87d4-44cd-bd5c-fa6a189fe4eb",
+    "position": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "id": 3,
+    "name": "we",
+    "energyLevel": 1,
+    "lifePoints": null,
+    "tipoArma": "Pistola",
+    "userId": "47e65728-87d4-44cd-bd5c-fa6a189fe4eb",
+    "position": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "id": 4,
+    "name": "ra",
+    "energyLevel": 5,
+    "lifePoints": null,
+    "tipoArma": "Escopeta",
+    "userId": "daece884-cca6-4213-b0cf-488212d2ed94",
+    "position": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "id": 5,
+    "name": "AK-47",
+    "energyLevel": 30,
+    "lifePoints": null,
+    "tipoArma": "Metralleta",
+    "userId": "47e65728-87d4-44cd-bd5c-fa6a189fe4eb",
+    "position": {
+      "x": 0,
+      "y": 0
+    }
+  }
+]

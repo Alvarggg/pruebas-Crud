@@ -1,0 +1,301 @@
+/* Fuente futurista */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+/* Estilos globales */
+body {
+  font-family: 'Audiowide', sans-serif;
+  background-color: #222; /* Fondo oscuro */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Cabecera */
+header {
+  background-color: #00ffcc; /* Color vibrante */
+  color: #222;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 5px solid #00bfa5; /* Borde en un tono más oscuro */
+  font-size: 15px;
+}
+
+header a {
+  color: #222; /* Texto oscuro */
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1em;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: #00bfa5; /* Color de hover */
+}
+
+/* Menú hamburguesa */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+li {
+  background-color: rgba(0, 255, 204, 0.2); /* Fondo translúcido vibrante */
+  color: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+/* Menú desplegable en dispositivos móviles */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-transform: uppercase;
+  text-align: center;
+  color: #222;
+  margin: 0 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin: 10px 0 0 0;
+}
+
+/* Estilos del footer */
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+footer a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ffa952;
+}
+
+/* Sección de selección de nombre */
+.character-name-section {
+  margin-top: 30px;
+}
+
+.display-character-name {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #00ffcc;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px #000, 0 0 10px #00ffcc; /* Brillo vibrante */
+}
+
+button {
+  padding: 12px 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #00ffcc;
+  color: #222;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #00bfa5;
+}
+
+/* Lista de personajes */
+.character-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.character-item {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+}
+
+.character-name {
+  flex-grow: 1;
+  font-size: 1.2em;
+}
+
+.character-form {
+  display: inline;
+}
+
+/* Botón de selección */
+.select-button {
+  background-color: #00ffcc;
+  color: #222;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.select-button:hover {
+  background-color: #00bfa5;
+}
+
+#evolutionMessage, #healMessage {
+  color: #00ffcc;
+  font-size: 22px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  border: 3px solid #00bfa5;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  display: none;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#gifContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#normalGif {
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #00ffcc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffcc;
+  object-fit: cover;
+}
+
+#mainContainer {
+  padding-bottom: 80px;
+}
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+footer a {
+  color: #ff6f00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffa952;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgba(0, 255, 204, 0.8);
+    z-index: 1;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    border-top: 1px solid #00bfa5;
+    margin: 0;
+    font-size: 0.9em;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .character-item {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .character-name {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+  }
+
+  #evolutionMessage, #healMessage {
+    font-size: 18px;
+    padding: 10px;
+  }
+}

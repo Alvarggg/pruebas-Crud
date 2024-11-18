@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Armas</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('/images/crear.jpg');
+            background-size: cover; /* Hace que la imagen ocupe toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            min-height: 100vh; /* Asegura que la imagen cubra toda la pantalla */
+        }
+        .list-group-item {
+            background-color: rgba(255, 255, 255, 0.8); /* Blanco con 80% de opacidad */
+            border-radius: 10px; /* Bordes redondeados */
+            padding: 20px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para destacar */
+        }
+        h5 {
+            color: #333; /* Color del texto */
+        }
+
+        ul.list-unstyled {
+            padding-left: 0;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <h1>Crear Armas</h1>
+        <form action="/characters" method="post">
+            <!-- Campo Nombre -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+
+            <!-- Campo Balas -->
+            <div class="mb-3">
+                <label for="energyLevel" class="form-label">Balas:</label>
+                <input type="number" id="energyLevel" name="energyLevel" class="form-control" required>
+            </div>
+
+            <!-- Campo Cargador -->
+            <div class="mb-3">
+                <label for="lifePoints" class="form-label">Cargador:</label>
+                <input type="number" id="lifePoints" name="lifePoints" class="form-control" required>
+            </div>
+
+            <!-- Campo Clase de Arma -->
+            <div class="mb-3">
+                <label for="tipoArma" class="form-label">Clase:</label>
+                <select id="tipoArma" name="tipoArma" class="form-select" required>
+                    <option value="Pistola">Pistola</option>
+                    <option value="Escopeta">Escopeta</option>
+                    <option value="Metralleta">Metralleta</option>
+                </select>
+            </div>
+
+            <!-- Botón para Crear Arma -->
+            <button type="submit" >Crear</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap 5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

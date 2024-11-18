@@ -1,0 +1,46 @@
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXXX-X');
+</script>
+
+<!-- Tabla de usuarios -->
+<h2>Usuarios Registrados</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% users.forEach(user => { %>
+            <tr>
+                <td data-label="Username"><%= user.username %></td>
+                <td data-label="Estado">
+                    <% if (user.isConnected) { %>
+                        <span style="color: green;">Conectado</span>
+                    <% } else { %>
+                        <% if (user.lastLogin) { %>
+                            Última vez conectado: <%= new Date(user.lastLogin).toLocaleString() %>
+                        <% } else { %>
+                            <span style="color: red;">Nunca se ha conectado</span>
+                        <% } %>
+                    <% } %>
+                </td>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        gtag('event', 'page_view', {
+            'event_category': 'Usuarios',
+            'event_label': 'Visualización de la tabla de usuarios'
+        });
+    });
+</script>
